@@ -5,3 +5,5 @@ unless product_status == 'open'
 else
   check_change = 'can_not'
 end
+
+puts "You #{check_change} change the product"
