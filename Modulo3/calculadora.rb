@@ -1,5 +1,6 @@
 result = ''
 loop do
+  puts result
   puts 'Selecione a opção:'
   puts '1 - Multiplicar 2 números'
   puts '2 - Dividir 2 números'
