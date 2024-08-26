@@ -14,7 +14,3 @@ hash = {}
 
   hash[key] = value
 end
-
-has.each do |k, v|
-  puts "Uma das chaves é #{k} e o seu valor é {v}"
-end
