@@ -10,3 +10,10 @@ def check_cpf(cpf_number)
     puts "Este não é um CPF válido!"
   end
 end
+
+print 'Digite seu cpf: '
+cpf_number = gets.chomp.to_i
+
+result = check_cpf(cpf_number)
+
+puts result
