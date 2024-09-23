@@ -6,5 +6,7 @@ class Computer
  def shutdown
   'shutdown the computer'
  end
-
 end
+
+computer = Computer.new
+puts computer.shutdown
