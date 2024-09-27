@@ -20,5 +20,5 @@ class Pessoa
 end
 
 pessoa = Pessoa.new(nome, idade)
-pessoa.mostrar_idade
 pessoa.mostrar_nome
+pessoa.mostrar_idade
