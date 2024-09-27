@@ -2,18 +2,23 @@ print 'Digite seu nome: '
 nome = gets.chomp
 
 print 'Digite sua idade: '
-nome = gets.chomp
+idade = gets.chomp
 
 class Pessoa
-  def idade
-    puts "#{idade}"
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
   end
 
-  def nome
-    puts "#{nome}"
+  def mostrar_idade
+    puts "Idade: #{@idade}"
+  end
+
+  def mostrar_nome
+    puts "Nome: #{@nome}"
   end
 end
 
-pessoa = Pessoa.new
-pessoa.idade
-pessoa.nome
+pessoa = Pessoa.new(nome, idade)
+pessoa.mostrar_idade
+pessoa.mostrar_nome
