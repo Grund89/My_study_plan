@@ -28,22 +28,21 @@ class Esportista
   end
 end
 
-class JogadorDeFutebol < Espostista
+class JogadorDeFutebol < Esportista
   def correr
     puts 'Correndo atrás da bola'
   end
 end
 
-class Maratonista < Espostista
+class Maratonista < Esportista
   def correr
     puts 'Percorrendo o circuito'
   end
 end
 
-jogadorDeFutebol = JogadorDeFutebol.new
-jogadorDeFutebol.competir
-jogadorDeFutebol.correr
+esportistas = [JogadorDeFutebol.new, Maratonista.new]
 
-maratonista = Maratonista.new
-maratonista.competir
-maratonista.correr
+esportistas.each do |esportista|
+  esportista.competir
+  esportista.correr
+end
