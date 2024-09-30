@@ -21,6 +21,6 @@ class Pessoa
   end
 end
 
-pessoa = Pessoa.new(nome, idade)
+pessoa = Pessoa.new(name, age)
 pessoa.name
 pessoa.age
