@@ -1,6 +1,6 @@
 class Animal
   def pular
-    puts 'Toing tóing'
+    puts 'Toing tóing, boing boing'
   end
 
   def dormir
