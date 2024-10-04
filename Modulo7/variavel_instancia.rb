@@ -9,3 +9,6 @@ class User
     puts "Seja bem vindo, #{@name} !"
   end
 end
+
+user = User.new
+user.add("João")
