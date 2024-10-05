@@ -9,7 +9,7 @@ class Dog
 end
 
 dog = Dog.new
-
+Í
 dog.name = 'Marlon'
 
 puts dog.name
