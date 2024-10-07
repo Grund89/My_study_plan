@@ -9,6 +9,9 @@ class Aluno
   end
 
   def exibir_informacoes
-    puts "Nome: #{@nome}, Idade: #{@idade}, Curso: #{@curso}, Gênero: #{@genero}"
+    puts "Nome: #{@nome}"
+    puts "Idade: #{@idade}"
+    puts "Curso: #{@curso}"
+    puts "Gênero: #{@genero}"
   end
 end
