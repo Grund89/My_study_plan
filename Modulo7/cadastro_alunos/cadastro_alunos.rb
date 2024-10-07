@@ -6,7 +6,7 @@ class CadastroAlunos
   end
 
   def adicionar_aluno(aluno)
-    @lista_de_alunos << Aluno
+    @lista_de_alunos << aluno
   end
 
   def listar_alunos

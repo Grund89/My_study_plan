@@ -1,12 +1,16 @@
 require_relative 'aluno'
+require_relative 'cadastro_alunos'
 
-alunos = []
+cadastro = CadastroAlunos.new
 
-# add aluno
+# criando alunos manualmente para teste
 aluno1 = Aluno.new('João', 20, 'Engenharia', 'Masculino')
-alunos << aluno1
+aluno2 = Aluno.new('Maria', 21, 'Medicina', 'Feminino')
 
-# exibi informações dos alunos
-alunos.each do |aluno|
-  aluno.exibir_informacoes
-end
+
+# adiciona alunos no cadastro
+cadastro.adicionar_aluno(aluno1)
+cadastro.adicionar_aluno(aluno2)
+
+# listando todos os alunos
+cadastro.listar_alunos
