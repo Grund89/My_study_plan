@@ -5,7 +5,21 @@ class CadastroAlunos
     @lista_de_alunos = []
   end
 
-  def adicionar_aluno(aluno)
+  # Método para add aluno com interação do usuário
+  def adicionar_aluno
+    print "Digite o nome do aluno: "
+    nome = gets.chomp
+
+    print "Digite a idade do aluno: "
+    idade = gets.chomp.to_i
+
+    print "Digite o curso do aluno: "
+    curso = gets.chomp
+
+    print "Digite o gênero do aluno (Masculino/Feminino): "
+    genero = gets.chomp
+
+    aluno = Aluno.new(nome, idade, curso, genero)
     @lista_de_alunos << aluno
   end
 
