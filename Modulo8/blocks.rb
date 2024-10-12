@@ -14,9 +14,18 @@
 #   puts '----'
 # end
 
-def foo
-  yield
-  yield
+def meu_iterador
+  yield 1
+  yield 2
+  yield 3
 end
 
-foo = { puts 'Exec the block'}
+meu_iterador do |valor|
+  puts "Valor: #{valor}"
+end
+
+# Explicando:
+
+# A função meu_iterador define um bloco de código que será executado quando a função for chamada.
+# Cada yield pausa a execução da função e passa o valor especificado para o bloco.
+# O bloco de código recebe o valor através do parâmetro valor e o imprime.
