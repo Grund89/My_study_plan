@@ -1,1 +1,1 @@
-5.time { puts "Exec the block"}
+5.times { puts "Exec the block"}
