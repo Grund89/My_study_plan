@@ -38,3 +38,6 @@ def foo
     puts "Sem parâmetro do tipo bloco"
   end
 end
+
+foo
+foo { puts "Com parametro do tipo bloco"}
