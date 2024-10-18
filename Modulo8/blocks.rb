@@ -31,13 +31,20 @@
 # O bloco de código recebe o valor através do parâmetro valor e o imprime.
 
 
-def foo
-  if block_given?
-    yield
-  else
-    puts "Sem parâmetro do tipo bloco"
-  end
+# def foo
+#   if block_given?
+#     yield
+#   else
+#     puts "Sem parâmetro do tipo bloco"
+#   end
+# end
+
+# foo
+# foo { puts "Com parametro do tipo bloco"}
+
+def foo(name, &block)
+  @name = name
+  block.call
 end
 
-foo
-foo { puts "Com parametro do tipo bloco"}
+foo ('Leonardo') { puts "Hellow #{@name}" }
