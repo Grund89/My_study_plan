@@ -42,9 +42,17 @@
 # foo
 # foo { puts "Com parametro do tipo bloco"}
 
-def foo(name, &block)
-  @name = name
-  block.call
-end
+# def foo(name, &block)
+#   @name = name
+#   block.call
+# end
 
-foo ('Leonardo') { puts "Hellow #{@name}" }
+# foo ('Leonardo') { puts "Hellow #{@name}" }
+
+def foo(numbers, &blocks)
+  if block_given?
+    numbers.each do |key, value|
+      blocks.call(key, value)
+    end
+  end
+end
