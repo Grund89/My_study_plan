@@ -56,3 +56,5 @@ def foo(numbers, &blocks)
     end
   end
 end
+
+numbers = { 2 => 2, 3 => 3, 4 => 4 }
