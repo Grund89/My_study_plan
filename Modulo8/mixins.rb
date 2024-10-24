@@ -44,7 +44,13 @@ class LutadorBoxe
   include Bracos
 end
 
+puts 'Lutador de Muay Thai'
 lutador1 = LutadorMuayThai.new
 lutador1.chute_frontal
 lutador1.jab_de_direita
 lutador1.jab_de_esquerda
+
+puts 'Lutador de Box'
+lutador2 = LutadorBoxe.new
+lutador2.jab_de_direita
+lutador2.gancho
