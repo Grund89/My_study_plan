@@ -34,3 +34,8 @@ module Bracos
     imprimir 'Gancho'
   end
 end
+
+class LutadorMuayThai
+  include Pernas
+  include Bracos
+end
