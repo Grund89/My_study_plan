@@ -18,3 +18,19 @@ module Pernas
     imprimir 'Chute Lateral'
   end
 end
+
+module Bracos
+  include ImpressaoDecorada
+
+  def jab_de_direita
+    imprimir 'Jab de direita'
+  end
+
+  def jab_de_esquerda
+    imprimir 'Jab de esquerda'
+  end
+
+  def gancho
+    imprimir 'Gancho'
+  end
+end
