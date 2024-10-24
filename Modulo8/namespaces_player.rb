@@ -15,4 +15,4 @@ module VideoGame
 end
 
 Football::Player.info
-Football::Player.info
+VideoGame::Player.info
