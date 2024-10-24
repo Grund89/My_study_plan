@@ -13,3 +13,6 @@ module VideoGame
     end
   end
 end
+
+Football::Player.info
+Football::Player.info
