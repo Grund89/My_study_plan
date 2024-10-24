@@ -39,3 +39,7 @@ class LutadorMuayThai
   include Pernas
   include Bracos
 end
+
+class LutadorBoxe
+  include Bracos
+end
