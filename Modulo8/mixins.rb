@@ -43,3 +43,8 @@ end
 class LutadorBoxe
   include Bracos
 end
+
+lutador1 = LutadorMuayThai.new
+lutador1.chute_frontal
+lutador1.jab_de_direita
+lutador1.jab_de_esquerda
