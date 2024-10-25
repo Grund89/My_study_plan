@@ -24,3 +24,29 @@ module PersonBase
     puts "Nome: #{@name}"
   end
 end
+
+module Person
+  class Juridic
+    include PersonBase
+
+    attr_reader :cnpj
+
+    def initialize(name, cnpj)
+      super(name)
+      @cnpj = cnpj
+      puts "CNPJ: #{cnpj}"
+    end
+  end
+
+  class Physical
+    include PersonBase
+
+    attr_reader :cpf
+
+    def initialize(name, cpf)
+      super(name)
+      @cpf = cpf
+      puts "CPF: #{cpf}"
+    end
+  end
+end
