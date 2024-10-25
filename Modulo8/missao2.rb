@@ -13,3 +13,14 @@
 # ```
 # Deverá retornar
 # ![img](https://i1.wp.com/onebitcode.com/wp-content/uploads/2018/07/n2.png?resize=341%2C105&ssl=1)
+
+module PersonBase
+  def initialize(name)
+    @name = name
+  end
+
+  def add
+    puts "Pessoa criada com sucesso!"
+    puts "Nome: #{@name}"
+  end
+end
