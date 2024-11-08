@@ -6,3 +6,8 @@ class Fish
   def swim
     puts 'Fish is swimming'
   end
+end
+
+fish = Fish.new
+fish.swim
+fish.walk
