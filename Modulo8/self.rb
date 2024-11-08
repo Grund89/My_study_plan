@@ -23,3 +23,13 @@ pen.pen_color
 pen2 = Pen.new
 pen2.color = "black"
 pen2.pen_color
+
+# Metodos de classe
+
+class Foo
+  def self.bar
+    puts self
+  end
+end
+
+Foo.bar
