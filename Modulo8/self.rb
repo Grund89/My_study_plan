@@ -19,3 +19,7 @@ end
 pen = Pen.new
 pen.color = "blue"
 pen.pen_color
+
+pen2 = Pen.new
+pen2.color = "black"
+pen2.pen_color
