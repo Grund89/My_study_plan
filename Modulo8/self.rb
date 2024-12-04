@@ -28,4 +28,7 @@
 
 class Foo
   def self.bar
-    puts
+    puts self
+  end
+end
+Foo.bar
