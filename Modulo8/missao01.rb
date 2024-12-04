@@ -10,7 +10,6 @@ regex = /\(\d{2}\)\s\d\s\d{4}-\d{4}/
 telefone = texto.match(regex)
 
 if telefone
-  puts "Número de telefone encontrado: #{telefone}"
 else
   puts "Nenhum número de telefone encontrado."
 end
